@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>Fullbleed support</title>
+<meta name="description" content="How to turn on Fullbleed, what the three modes do, and how to report a site.">
+<style>
+:root{--paper:#F6F3EE;--ink:#141414;--ink2:#5f5d5a;--marker:#F5C400;--hair:rgba(20,20,20,.35)}
+@media (prefers-color-scheme:dark){:root{--paper:#121212;--ink:#F2EFE9;--ink2:#a9a6a0;--hair:rgba(242,239,233,.35)}}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--paper);color:var(--ink);font:17px/1.55 -apple-system,BlinkMacSystemFont,"SF Pro Text",system-ui,sans-serif}
+.wrap{max-width:40rem;margin:0 auto;padding:24px 16px 48px}
+nav{display:flex;gap:16px;flex-wrap:wrap;border-bottom:1px solid var(--hair);padding-bottom:12px;margin-bottom:24px}
+nav a{color:var(--ink);padding:10px 0;min-height:44px;display:inline-flex;align-items:center}
+nav a[aria-current]{font-weight:700;box-shadow:inset 0 -3px 0 var(--marker)}
+a{color:var(--ink);text-underline-offset:3px}
+a:focus-visible{outline:3px solid var(--ink);outline-offset:2px}
+h1{font-size:2rem;line-height:1.15;margin:0 0 8px}
+h2{font-size:1.2rem;margin:32px 0 6px}
+p,li{max-width:36rem}
+.meta{color:var(--ink2);font-size:.9rem}
+.nums{display:flex;align-items:center;gap:12px;font-size:2.4rem;font-weight:700;font-variant-numeric:tabular-nums;margin:24px 0}
+.nums .band{background:var(--marker);color:#141414;padding:0 10px;border-radius:4px}
+.fold{border-top:1px solid var(--hair);margin-top:32px;padding-top:12px}
+.todo{background:var(--marker);color:#141414;padding:0 4px;border-radius:3px}
+dt{font-weight:700;margin-top:12px}dd{margin:0}
+</style>
+</head>
+<body><main class="wrap">
+<nav aria-label="Site"><a href="./" >Fullbleed</a><a href="support" aria-current="page">Support</a><a href="privacy" >Privacy</a></nav>
+<h1>Support</h1>
+<p class="meta">Updated 1 November 2026</p>
+<h2>How to turn it on</h2>
+<ol>
+<li>Open Settings &gt; Apps &gt; Safari &gt; Extensions &gt; Fullbleed and switch it on.</li>
+<li>Open a site in Safari on the iPhone Duo's front screen.</li>
+<li>Open the page menu, choose Manage Extensions, and allow Fullbleed on that site.</li>
+<li>Tap the Fullbleed button in Safari's side strip to step through Backdrop, Full and Off, or pick a mode in the extension menu.</li>
+</ol>
+<p>The Fullbleed app has a button that opens Safari's extension settings. It also shows these steps, in case your iOS version lands on the top of Settings instead.</p>
+<h2>The three modes</h2>
+<dl>
+<dt>Off</dt><dd>Safari's own layout.</dd>
+<dt>Backdrop</dt><dd>The page background and fixed bars (headers, tab bars, banners) reach the right edge. Text and buttons stay clear of Safari's controls. In-flow images and headers keep Safari's width.</dd>
+<dt>Full</dt><dd>Everything uses the full width, including text.</dd>
+</dl>
+<h2>The button disappeared</h2>
+<p>The in-page button hides while a site is set to Off, so it never sits over the page. Open the extension menu and pick Backdrop or Full, or change the site in the Sites list in the app, and the button comes back.</p>
+<h2>It does nothing on my phone</h2>
+<p>That is expected on any screen without the strip. Only the front screen of an iPhone Duo has Safari's vertical button strip. On the inner display and on every other iPhone, Fullbleed leaves pages untouched. The Fullbleed app says so on its Front screen.</p>
+<p>If you are on the front screen and nothing changes: check that the extension is on in Settings, that you allowed it for the site, that the master switch is on in the Fullbleed app, and that the site is not set to Off. Some pages use a fixed width or lay themselves out in ways Fullbleed does not change.</p>
+<h2>Buttons and elements near the edge</h2>
+<p>Buttons anchored to the right inside fixed bars, and small floating elements, are shifted out of the strip so they stay tappable. Elements inside iframes, such as some chat widgets, are not shifted and can still sit under Safari's controls. If one gets in the way, report the site.</p>
+<h2>Report a site</h2>
+<p>In the extension menu, choose Report this site. The Fullbleed app opens a mail with the site address, the mode, your iOS version and the app version. Check it, then send it yourself. If Mail is not set up, the app copies the text so you can paste it somewhere else.</p>
+<h2>Contact</h2>
+<p><a href="mailto:hemalmodi3@gmail.com">hemalmodi3@gmail.com</a></p>
+<p class="meta">Fullbleed is made by Hemal Modi.</p>
+</main></body></html>

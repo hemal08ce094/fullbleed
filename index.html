@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>Fullbleed: Full Width Safari</title>
+<meta name="description" content="Fullbleed lets web pages use the whole width of the iPhone Duo's front screen in Safari, one site at a time.">
+<style>
+:root{--paper:#F6F3EE;--ink:#141414;--ink2:#5f5d5a;--marker:#F5C400;--hair:rgba(20,20,20,.35)}
+@media (prefers-color-scheme:dark){:root{--paper:#121212;--ink:#F2EFE9;--ink2:#a9a6a0;--hair:rgba(242,239,233,.35)}}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--paper);color:var(--ink);font:17px/1.55 -apple-system,BlinkMacSystemFont,"SF Pro Text",system-ui,sans-serif}
+.wrap{max-width:40rem;margin:0 auto;padding:24px 16px 48px}
+nav{display:flex;gap:16px;flex-wrap:wrap;border-bottom:1px solid var(--hair);padding-bottom:12px;margin-bottom:24px}
+nav a{color:var(--ink);padding:10px 0;min-height:44px;display:inline-flex;align-items:center}
+nav a[aria-current]{font-weight:700;box-shadow:inset 0 -3px 0 var(--marker)}
+a{color:var(--ink);text-underline-offset:3px}
+a:focus-visible{outline:3px solid var(--ink);outline-offset:2px}
+h1{font-size:2rem;line-height:1.15;margin:0 0 8px}
+h2{font-size:1.2rem;margin:32px 0 6px}
+p,li{max-width:36rem}
+.meta{color:var(--ink2);font-size:.9rem}
+.nums{display:flex;align-items:center;gap:12px;font-size:2.4rem;font-weight:700;font-variant-numeric:tabular-nums;margin:24px 0}
+.nums .band{background:var(--marker);color:#141414;padding:0 10px;border-radius:4px}
+.fold{border-top:1px solid var(--hair);margin-top:32px;padding-top:12px}
+.todo{background:var(--marker);color:#141414;padding:0 4px;border-radius:3px}
+dt{font-weight:700;margin-top:12px}dd{margin:0}
+</style>
+</head>
+<body><main class="wrap">
+<nav aria-label="Site"><a href="./" aria-current="page">Fullbleed</a><a href="support" >Support</a><a href="privacy" >Privacy</a></nav>
+<h1>Fullbleed</h1>
+<p>A Safari extension that lets web pages use the whole width of the iPhone Duo's front screen, one site at a time.</p>
+<div class="nums" aria-label="Page width goes from 382 to 466 points"><span>382</span><span aria-hidden="true">to</span><span class="band">466</span><span style="font-size:1rem;font-weight:400">pt</span></div>
+<p>On the front screen, Safari keeps its buttons in a vertical strip on the right and lays pages out beside it. That leaves a blank band behind the controls. Fullbleed gives the page that band back.</p>
+<h2>Three modes for each site</h2>
+<dl>
+<dt>Off</dt><dd>Safari's own layout.</dd>
+<dt>Backdrop</dt><dd>The page background and fixed bars (headers, tab bars, banners) reach the right edge. Text and buttons stay clear of Safari's controls, and in-flow images and headers keep Safari's width. The default for new sites.</dd>
+<dt>Full</dt><dd>Everything, including text, uses the full width.</dd>
+</dl>
+<h2>What else it does</h2>
+<ul>
+<li>A small button in the strip steps through Backdrop, Full and Off for the site you are on. It hides while a site is set to Off; the mode picker in the extension menu, or the Sites list in the app, turns it back on.</li>
+<li>Fullbleed remembers the mode for each site.</li>
+<li>Shortcuts actions and a Control Center toggle switch it on and off.</li>
+<li>Nothing leaves your phone. See the <a href="privacy">privacy policy</a>.</li>
+</ul>
+<p>Fullbleed only does something on the front screen of an iPhone Duo. On the inner display and on other iPhones it leaves pages alone. It does not work on every site; the <a href="support">support page</a> explains how to report one.</p>
+<p>Free, with no purchases. Requires iOS 27.1.</p>
+<p class="fold meta"><a href="https://apps.apple.com/app/id6829423435">Fullbleed on the App Store</a></p>
+<p class="meta">Fullbleed is made by Hemal Modi. Updated 1 November 2026.</p>
+</main></body></html>
